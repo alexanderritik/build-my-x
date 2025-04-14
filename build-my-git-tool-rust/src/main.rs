@@ -43,7 +43,7 @@ fn main() -> anyhow::Result<()> {
     // You can use print statements as follows for debugging, they'll be visible when running tests.
     eprintln!("Logs from your program will appear here!");
 
-    // println!("{:?}", args);
+    println!("{:?}", args);
     match args.command {
         Command::Init => {
             fs::create_dir(".git").unwrap();
